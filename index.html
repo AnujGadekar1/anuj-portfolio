@@ -1,0 +1,1401 @@
+<!-- Path: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anuj Gadekar - Windows XP Home Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-bliss">
+  <!-- BOOT SEQUENCE -->
+  <div id="boot-sequence">
+    <!-- BIOS STAGE -->
+    <div class="boot-stage" data-stage="bios">
+      <div class="bios-screen">
+        <p>Anuj Virtual BIOS v1.0</p>
+        <p>CPU: Intel(R) Core(TM) Virtual Processor</p>
+        <p>Memory Testing: 1024MB OK</p>
+        <p>Detecting IDE Drives ...</p>
+        <p>Press DEL to enter setup</p>
+      </div>
+    </div>
+
+    <!-- XP LOGO STAGE -->
+    <div class="boot-stage" data-stage="xp">
+      <div class="xp-boot-screen">
+        <img src="assets/windowXPboot.gif" alt="Windows XP Boot" />
+      </div>
+    </div>
+
+    <!-- LOGIN STAGE -->
+    <div class="boot-stage" data-stage="login">
+      <div class="login-screen">
+        <div class="login-panel">
+          <div class="login-title">Click your user name to begin</div>
+          <div class="login-user" id="login-user">
+            <img src="assets/windowsIcons/user.png" alt="User" />
+            <span>Anuj</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESKTOP -->
+  <div class="desktop" id="desktop">
+    <!-- Desktop Icons -->
+    <!-- Path: index.html (desktop icons section) -->
+<div class="desktop-icons">
+  <!-- 1. About Me -->
+  <div class="icon" data-window="about-window">
+    <img src="assets/windowsIcons/user.png" alt="About Me" />
+    <span>About Me</span>
+  </div>
+
+  <!-- 2. My Resume -->
+  <div class="icon" data-window="resume-window">
+    <img src="assets/windowsIcons/Notepad.png" alt="My Resume" />
+    <span>My Resume</span>
+  </div>
+
+  <!-- 3. My Projects -->
+  <div class="icon" data-window="projects-window">
+    <img src="assets/windowsIcons/ie.png" alt="My Projects" />
+    <span>My Projects</span>
+  </div>
+
+  <!-- 4. Contact Me -->
+  <div class="icon" data-window="contact-window">
+    <img src="assets/windowsIcons/Outlook Express.png" alt="Contact Me" />
+    <span>Contact Me</span>
+  </div>
+</div>
+
+
+    <!-- Path: index.html (About Me window) -->
+<div
+  id="about-window"
+  class="window"
+  style="top: 60px; left: 70px; width: 780px; height: 540px;"
+>
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <img src="assets/windowsIcons/ie.png" class="title-icon" alt="" />
+      About Me
+    </div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize" onclick="minimizeWindow('about-window')">
+        <img src="assets/windowsIcons/Minimize.png" alt="" />
+      </button>
+      <button aria-label="Maximize" onclick="maximizeWindow('about-window')">
+        <img src="assets/windowsIcons/Maximize.png" alt="" />
+      </button>
+      <button
+        aria-label="Close"
+        onclick="closeWindow('about-window')"
+        class="close-btn"
+      >
+        <img src="assets/windowsIcons/Exit.png" alt="" />
+      </button>
+    </div>
+  </div>
+
+  <div class="window-body about-body">
+    <!-- IE-style toolbar -->
+    <div class="about-toolbar">
+      <div class="about-menu-row">
+        <span>File</span>
+        <span>View</span>
+        <span>Help</span>
+      </div>
+      <div class="about-nav-row">
+        <div class="about-nav-buttons">
+          <button title="Back">◀</button>
+          <button title="Forward">▶</button>
+          <button title="My Projects">
+            <img src="assets/windowsIcons/My Documents.png" alt="" />
+          </button>
+          <button title="My Resume">
+            <img src="assets/windowsIcons/Notepad.png" alt="" />
+          </button>
+        </div>
+        <div class="about-address">
+          <span>Address</span>
+          <input type="text" value="About Me" readonly />
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="about-main">
+      <!-- LEFT PANELS -->
+      <aside class="about-sidebar">
+        <!-- Social Links panel -->
+       <section class="about-panel social-panel">
+  <header class="about-panel-header">
+    <span>Social Links</span>
+  </header>
+
+  <div class="social-body">
+    <a
+      class="social-item"
+      href="https://www.linkedin.com/in/anuj-gadekar-b06b902b2"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="assets\linkedinicon.png" class="social-icon-img" alt="LinkedIn" />
+      <span>LinkedIn</span>
+    </a>
+
+    <a
+      class="social-item"
+      href="https://github.com/AnujGadekar1"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="assets\github-logo.png" class="social-icon-img" alt="GitHub" />
+      <span>GitHub</span>
+    </a>
+
+    <a
+      class="social-item"
+      href="mailto:anuj.work11@gmail.com"
+    >
+      <img src="assets/windowsIcons/mail.png" class="social-icon-img" alt="Email" />
+      <span>Email</span>
+    </a>
+  </div>
+</section>
+
+<section class="skills-panel about-panel">
+  <header class="about-panel-header">
+    <span>Skills</span>
+  </header>
+
+  <div class="panel-body">
+    <ul class="skills-list">
+
+<li class="skill-item">
+        <img src="assets/skillslogo/flutter-icon.png" class="skill-icon" alt="Flutter" />
+        <div class="skill-text">
+          <span class="skill-title">Flutter , Dart</span>
+          <span class="skill-sub">Mobile App Development</span>
+        </div>
+      </li>
+
+
+
+      <li class="skill-item">
+        <img src="assets/skillslogo/java.png" class="skill-icon" alt="Java" />
+        <div class="skill-text">
+          <span class="skill-title">Java / Spring Boot</span>
+          <span class="skill-sub">Java Full Stack Developer</span>
+        </div>
+      </li>
+
+      <li class="skill-item">
+        <img src="assets/skillslogo/selenium.png" class="skill-icon" alt="Selenium" />
+        <div class="skill-text">
+          <span class="skill-title">Selenium Testing</span>
+          
+        </div>
+      </li>
+
+      <li class ="skill-item">
+        <img src="assets/skillslogo/docker_logo.png" class="skill-icon" alt="Docker" />
+        <div class="skill-text">
+          <span class="skill-title">Docker & DevOps</span>
+           
+        </div>
+      </li>
+
+<li class="skill-item">
+        <img src="assets/skillslogo/ML.png" class="skill-icon" alt="Machine Learning" />
+        <div class="skill-text">
+          <span class="skill-title">Machine Learning</span>
+          <span class="skill-sub"></span>
+        </div>
+      </li>
+
+      <li class="skill-item">
+        <img src="assets/skillslogo/python.png" class="skill-icon" alt="Python" />
+        <div class="skill-text">
+          <span class="skill-title">Python / Flask</span>
+          <span class="skill-sub">Scripting & Web Backends</span>
+        </div>
+      </li>
+
+      <li class="skill-item">
+        <div class="skill-icon-row">
+          <img src="assets/skillslogo/html.svg" class="skill-icon" alt="HTML" />
+          <img src="assets/skillslogo/css.svg" class="skill-icon" alt="CSS" />
+          <img src="assets/skillslogo/javascript.svg" class="skill-icon" alt="JS" />
+        </div>
+        <div class="skill-text">
+          <span class="skill-title">Frontend — HTML / CSS / JavaScript</span>
+          <span class="skill-sub">Responsive UI/UX</span>
+        </div>
+      </li>
+
+      <li class="skill-item">
+        <img src="assets/skillslogo/React-icon.svg.png" class="skill-icon" alt="React" />
+        <div class="skill-text">
+          <span class="skill-title">React / Web Apps</span>
+          <span class="skill-sub">Single-page apps, dashboards</span>
+        </div>
+      </li>
+
+      <li class="skill-item">
+        <div class="skill-icon-row">
+          <img src="assets/skillslogo/mysql.png" class="skill-icon" alt="MySQL" />
+          <img src="assets/skillslogo/Sqlite.png" class="skill-icon" alt="SQLite" />
+        </div>
+        <div class="skill-text">
+          <span class="skill-title">SQL & Databases</span>
+          <span class="skill-sub">(MySQL, SQLite , Microservices)</span>
+        </div>
+      </li>
+
+      <li class="skill-item">
+        <img src="assets/skillslogo/git.svg" class="skill-icon" alt="Git" />
+        <div class="skill-text">
+          <span class="skill-title">REST APIs / Backend Services</span>
+          <span class="skill-sub">CI/CD & Deployments</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+        <!-- Software panel -->
+        <section class="about-panel tools-panel">
+  <header class="about-panel-header">
+    <span>Tools I Use</span>
+  </header>
+
+  <ul class="tools-list">
+
+     <li class="tool-item">
+      <img src="assets\skillslogo\a.png" class="tool-icon" alt="Android Studio" />
+      <span>Android Studio</span>
+    </li>
+    <li class="tool-item">
+      <img src="assets\skillslogo\vs.png" class="tool-icon" alt="VS Code" />
+      <span>VS Code</span>
+    </li>
+    <li class="tool-item">
+      <img src="assets\skillslogo\IntelliJ_logo.png" class="tool-icon" alt="IntelliJ" />
+      <span>IntelliJ</span>
+    </li>
+      <li class="tool-item">
+      <img src="assets\skillslogo\git.png" class="tool-icon" alt="Git" />
+      <span>Git</span>
+    </li>
+    <li class="tool-item">
+      <img src="assets\skillslogo\aws.png" class="tool-icon" alt="AWS" />
+      <span>AWS</span>
+    </li>
+    <li class="tool-item">
+      <img src="assets\github-logo.png" class="tool-icon" alt="GitHub" />
+      <span>GitHub</span>
+    </li>
+     <li class="tool-item">
+      <img src="assets\skillslogo\n8n.png" class="tool-icon" alt="n8n" />
+      <span>n8n</span>
+    </li>
+    <li class="tool-item">
+      <img src="assets\skillslogo\postman-logo.png" class="tool-icon" alt="Postman" />
+      <span>Postman, JMeter</span>
+    </li>
+  </ul>
+</section>
+
+      </aside>
+
+      <!-- RIGHT CONTENT -->
+      <section class="about-content-pane">
+        <div class="about-scroll">
+          <header class="about-heading-row">
+            <div class="about-avatar">
+              <img src="assets/windowsIcons/user.png" alt="Anuj Avatar" />
+            </div>
+            <div class="about-title-text">
+              <h1>About Me</h1>
+              <p>B.E. Computer Engineering · Founder, ShXlabs</p>
+            </div>
+          </header>
+
+          <div class="about-text">
+          <p>
+  I’m Anuj — a software engineer who loves turning rough ideas into polished,
+  reliable products that people genuinely enjoy using. I’m happiest when I can
+  work across the stack: understanding real problems, designing clean user flows,
+  and engineering systems that scale smoothly in the real world.
+</p>
+
+<p>
+  I’ve built apps that thousands of users rely on, automated workflows that save
+  companies time every day, and AI systems that make safety and decision-making
+  smarter. Whether it’s a <strong>Flutter</strong> app, a
+  <strong>Spring Boot</strong> backend, or an intelligent automation pipeline —
+  I care about strong engineering beneath a simple experience.
+</p>
+
+<p>
+  Winning national-level hackathons and leading projects at my startup taught me
+  how to move fast without sacrificing clarity: prototype quickly, refine what
+  matters, and collaborate to build something that actually helps its users.
+</p>
+
+<p>
+  I enjoy writing code that future-me will thank me for — well-structured,
+  well-documented, and guided by thoughtful design. I’m looking for opportunities
+  where technology isn’t just built for the sake of it, but to create real impact.
+  If you’re building something ambitious and user-focused,
+  I’d love to be a part of it.
+</p>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Path: index.html (Resume Window) -->
+<div id="resume-window" class="window" style="top: 90px; left: 260px; width: 750px; height: 550px;">
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <img src="assets/windowsIcons/Notepad.png" class="title-icon" alt="" />
+      My Resume
+    </div>
+    <div class="title-bar-controls">
+      <button onclick="minimizeWindow('resume-window')">
+        <img src="assets/windowsIcons/Minimize.png" alt="" />
+      </button>
+      <button onclick="maximizeWindow('resume-window')">
+        <img src="assets/windowsIcons/Maximize.png" alt="" />
+      </button>
+      <button class="close-btn" onclick="closeWindow('resume-window')">
+        <img src="assets/windowsIcons/Exit.png" alt="" />
+      </button>
+    </div>
+  </div>
+
+  <div class="window-body resume-body">
+    <div class="resume-toolbar">
+      <button class="resume-btn download-btn" onclick="window.open('assets/resume/Anuj_Gadekar_Resume.pdf')">
+        📄 Download PDF
+      </button>
+    </div>
+
+    <div class="resume-viewer">
+      <img src="assets/resume/Anuj_Gadekar_Resume.png" alt="Anuj Gadekar Resume" />
+    </div>
+  </div>
+</div>
+
+    <!-- Path: index.html (My Projects window) -->
+<div id="projects-window" class="window" style="top: 60px; left: 200px; width: 780px;">
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <img src="assets/windowsIcons/ie.png" class="title-icon" alt="" />
+      My Projects
+    </div>
+    <div class="title-bar-controls">
+      <button onclick="minimizeWindow('projects-window')">
+        <img src="assets/windowsIcons/Minimize.png" alt="" />
+      </button>
+      <button onclick="maximizeWindow('projects-window')">
+        <img src="assets/windowsIcons/Maximize.png" alt="" />
+      </button>
+      <button onclick="closeWindow('projects-window')" class="close-btn">
+        <img src="assets/windowsIcons/Exit.png" alt="" />
+      </button>
+    </div>
+  </div>
+
+  <div class="window-body projects-window-body">
+    <!-- IE-style toolbar -->
+    <div class="projects-toolbar">
+      <div class="projects-menu-row">
+        <span>File</span>
+        <span>View</span>
+        <span>Tools</span>
+        <span>Help</span>
+      </div>
+      <div class="projects-nav-row">
+        <div class="projects-nav-icons">
+          <button title="Home">
+            <img src="assets/windowsIcons/My Documents.png" alt="" />
+          </button>
+          <button title="Back">◀</button>
+          <button title="Forward">▶</button>
+          <button title="Favorites">★</button>
+        </div>
+        <div class="projects-address">
+          <span>Address</span>
+          <input type="text" value="https://www.myprojects.com" readonly />
+        </div>
+      </div>
+    </div>
+
+    <!-- Inner app -->
+    <div class="projects-shell">
+      <!-- Sidebar -->
+      <aside class="projects-sidebar">
+        <header class="projects-logo">
+          <div class="logo-circle">A</div>
+          <div class="logo-text">
+            <span class="logo-main">MyProjects</span>
+            <span class="logo-sub">by Anuj</span>
+          </div>
+        </header>
+
+      <nav class="projects-nav">
+  <button class="projects-nav-item" onclick="openWindow('personal-projects-window')">
+    <span class="nav-icon">🏠</span>
+    <span>Personal Work</span>
+  </button>
+
+  <button class="projects-nav-item" onclick="openWindow('research-projects-window')">
+    <span class="nav-icon">🌐</span>
+    <span>Research Work</span>
+  </button>
+
+  <button class="projects-nav-item" onclick="openWindow('client-projects-window')">
+    <span class="nav-icon">💼</span>
+    <span>Client Work</span>
+  </button>
+
+   
+</nav>
+
+      </aside>
+
+      <!-- Main content -->
+      <section class="projects-content">
+        <header class="projects-header">
+          <div class="projects-search">
+            <input type="text" placeholder="Search projects" />
+            <button>🔍</button>
+          </div>
+          <div class="projects-social">
+            <!-- replace # with your real links -->
+            <a href="https://github.com/AnujGadekar1" title="GitHub">GH</a>
+            <a href="https://www.linkedin.com/in/anuj-gadekar-b06b902b2" title="LinkedIn">in</a>
+            <a href="#" title="Instagram">IG</a>
+          </div>
+        </header>
+
+        <div class="projects-grid">
+        <!-- Card 1 -->
+<article
+  class="project-card-xl"
+  data-category="personal web"
+  data-link="https://github.com/AnujGadekar1/Accessibility-Analyzer-Project"
+>
+  <div class="project-thumb">
+    <img
+      src="assets/projects/accessibility-ai.png"
+      alt="AccessibilityAI Project Interface"
+      class="project-thumb-img"
+    />
+    <span class="thumb-label">AccessibilityAI</span>
+  </div>
+  <div class="project-meta">
+    <h3>AccessibilityAI</h3>
+    <p>WCAG accessibility analyzer with automated reports.</p>
+    <div class="project-tags">
+      <span>Personal Work</span>
+      <span>Web</span>
+    </div>
+  </div>
+</article>
+
+<!-- Card 2 -->
+<article
+  class="project-card-xl"
+  data-category="client ai web"
+  data-link="https://github.com/AnujGadekar1/Shoplifting-Detection-System"
+>
+  <div class="project-thumb">
+    <img
+      src="assets/projects/shoplifting.png"
+      alt="Shoplifting Detection System"
+      class="project-thumb-img"
+    />
+    <span class="thumb-label">Shoplifting Detection</span>
+  </div>
+  <div class="project-meta">
+    <h3>Shoplifting Detection</h3>
+    <p>Real-time model for shoplifting / anomaly detection.</p>
+    <div class="project-tags">
+      <span>Personal Work</span>
+      <span>AI</span>
+      
+      <span>Won 1st Prize</span>
+    </div>
+  </div>
+</article>
+
+<!-- Card 3 -->
+<article
+  class="project-card-xl"
+  data-category="personal mobile"
+  data-link="https://github.com/AnujGadekar1/FinTrack-AI-Finance-App"
+>
+  <div class="project-thumb">
+    <img
+      src="assets/projects/fintrack.png"
+      alt="FinTrack App Screens"
+      class="project-thumb-img"
+    />
+    <span class="thumb-label">FinTrack</span>
+  </div>
+  <div class="project-meta">
+    <h3>FinTrack</h3>
+    <p>AI-assisted personal finance tracking and insights.</p>
+    <div class="project-tags">
+      <span>Personal Work</span>
+      <span>Web App</span>
+      <span>MERN Stack</span>
+    </div>
+  </div>
+</article>
+
+<!-- Card 4 -->
+<article
+  class="project-card-xl"
+  data-category="client mobile"
+  data-link="https://github.com/AnujGadekar1/AgriGuard-App-Master"
+>
+  <div class="project-thumb">
+    <img
+      src="assets/projects/AgriGaurd.png"
+      alt="AgriGuard App"
+      class="project-thumb-img"
+    />
+    <span class="thumb-label">AgriGuard App</span>
+  </div>
+  <div class="project-meta">
+    <h3>AgriGuard App</h3>
+    <p>A Complete centralize chemical Management System</p>
+    <div class="project-tags">
+      <span>Personal Work</span>
+      <span>Mobile</span>
+    </div>
+  </div>
+</article>
+ 
+<!-- Research Work Projects Window -->
+<div
+  id="research-projects-window"
+  class="window"
+  style="top: 80px; left: 140px; width: 820px; height: 560px; display: none;"
+>
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <img src="assets/windowsIcons/ie.png" class="title-icon" alt="" />
+      Research Work – Projects
+    </div>
+    <div class="title-bar-controls">
+      <button onclick="minimizeWindow('research-projects-window')">
+        <img src="assets/windowsIcons/Minimize.png" alt="" />
+      </button>
+      <button onclick="maximizeWindow('research-projects-window')">
+        <img src="assets/windowsIcons/Maximize.png" alt="" />
+      </button>
+      <button onclick="closeWindow('research-projects-window')" class="close-btn">
+        <img src="assets/windowsIcons/Exit.png" alt="" />
+      </button>
+    </div>
+  </div>
+
+  <div class="window-body projects-window-body">
+    <div class="projects-shell">
+      <section class="projects-content">
+        <header class="projects-header">
+          <div class="projects-search">
+            <input type="text" placeholder="Search research projects" />
+            <button>🔍</button>
+          </div>
+        </header>
+
+  <!-- NEW Research Project 1: Medical Imaging -->
+  <article
+    class="project-card-xl"
+    data-description="Deep learning–based medical imaging pipeline using CNNs for brain tumor classification from MRI scans. Includes preprocessing, data augmentation, model training, and evaluation with explainability (Grad-CAM)."
+  >
+    <div class="project-thumb">
+      <img
+        src="assets/projects/image.png"
+        alt="Medical Imaging – Brain Tumor CNN"
+        class="project-thumb-img"
+      />
+      <span class="thumb-label">Medical Imaging – Brain Tumor</span>
+    </div>
+    <div class="project-meta">
+      <h3>Medical Imaging using CNN – Brain Tumor</h3>
+      <p>CNN-based MRI brain tumor classification with explainability.</p>
+      <div class="project-tags">
+        <span>Research Work</span>
+        <span>Medical Imaging</span>
+        <span>CNN</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- NEW Research Project 2: Med LLM Benchmarking -->
+  <article
+    class="project-card-xl"
+    data-description="Designed a comprehensive benchmarking framework for medical LLMs, covering clinical QA, summarization, reasoning, and safety checks. Includes dataset curation, evaluation metrics, and an interface to compare multiple LLMs side by side."
+  >
+    <div class="project-thumb">
+      <img
+        src="assets/projects/med-llm-benchmark.png"
+        alt="Med LLM Benchmarking Framework"
+        class="project-thumb-img"
+      />
+      <span class="thumb-label">Med LLM Benchmark</span>
+    </div>
+    <div class="project-meta">
+      <h3>Comprehensive Benchmarking Framework for Med LLMs</h3>
+      <p>Evaluation framework for medical LLMs across tasks & safety.</p>
+      <div class="project-tags">
+        <span>Research Work</span>
+        <span>LLM</span>
+        <span>Evaluation</span>
+      </div>
+    </div>
+  </article>
+</div>
+      </section>
+    </div>
+  </div>
+</div>
+<!-- Client Work Projects Window -->
+<div
+  id="client-projects-window"
+  class="window"
+  style="top: 90px; left: 160px; width: 820px; height: 560px; display: none;"
+>
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <img src="assets/windowsIcons/ie.png" class="title-icon" alt="" />
+      Client Work – Projects
+    </div>
+    <div class="title-bar-controls">
+      <button onclick="minimizeWindow('client-projects-window')">
+        <img src="assets/windowsIcons/Minimize.png" alt="" />
+      </button>
+      <button onclick="maximizeWindow('client-projects-window')">
+        <img src="assets/windowsIcons/Maximize.png" alt="" />
+      </button>
+      <button onclick="closeWindow('client-projects-window')" class="close-btn">
+        <img src="assets/windowsIcons/Exit.png" alt="" />
+      </button>
+    </div>
+  </div>
+
+  <div class="window-body projects-window-body">
+    <div class="projects-shell">
+      <section class="projects-content">
+        <header class="projects-header">
+          <div class="projects-search">
+            <input type="text" placeholder="Search client projects" />
+            <button>🔍</button>
+          </div>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Client Project 1: Construction Zone App -->
+          <article
+            class="project-card-xl"
+            data-link="https://play.google.com/store/apps/details?id=com.shxlabs.construction_zone"
+          >
+            <div class="project-thumb">
+              <img
+                src="assets/projects/construction-zone.png"
+                alt="Construction Zone App"
+                class="project-thumb-img project-thumb-img--banner"
+              />
+              <span class="thumb-label">Construction Zone</span>
+            </div>
+            <div class="project-meta">
+              <h3>Construction Zone App</h3>
+              <p>Android app for construction estimation & on-site operations.</p>
+              <div class="project-tags">
+                <span>Client Work</span>
+                <span>Mobile</span>
+                <span>Flutter</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Client Project 2: Dyslexia Learning App -->
+          <article
+            class="project-card-xl"
+            data-link="https://play.google.com/store/apps/details?id=com.shxlabs.construction_zone"
+          >
+            <div class="project-thumb">
+              <img
+                src="assets/projects/dyslexia-app.png"
+                alt="Dyslexia Learning App"
+                class="project-thumb-img"
+              />
+              <span class="thumb-label">Dyslexia App</span>
+            </div>
+            <div class="project-meta">
+              <h3>Dyslexia Learning App</h3>
+              <p>Personalized learning app for children with dyslexia.</p>
+              <div class="project-tags">
+                <span>Client Work</span>
+                <span>Education</span>
+                <span>Mobile</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Client Project 3: Automation Tools -->
+          <article
+            class="project-card-xl"
+            data-link="https://play.google.com/store/apps/details?id=com.shxlabs.construction_zone"
+          >
+            <div class="project-thumb">
+              <img
+                src="assets/projects/automation-tools.png"
+                alt="Automation Tools"
+                class="project-thumb-img"
+              />
+              <span class="thumb-label">Automation Tools</span>
+            </div>
+            <div class="project-meta">
+              <h3>Business Automation Tools</h3>
+              <p>Suite of automation tools improving business processes by 35%.</p>
+              <div class="project-tags">
+                <span>Client Work</span>
+                <span>Automation</span>
+                <span>Tools</span>
+              </div>
+            </div>
+          </article>
+          <!-- Client Project 2: Dyslexia Learning App -->
+          <article
+            class="project-card-xl"
+            data-link="https://play.google.com/store/apps/details?id=com.shxlabs.construction_zone"
+          >
+            <div class="project-thumb">
+              <img
+                src="assets/projects/TpcConnect.png"
+                alt="TPC Connect App"
+                class="project-thumb-img"
+              />
+              <span class="thumb-label">TPC Connect</span>
+            </div>
+            <div class="project-meta">
+              <h3>TPC Connect App</h3>
+              <p>Official Training & Placement Cell app with real-time job postings and resume submissions.
+</p>
+              <div class="project-tags">
+                <span>Client Work</span>
+                <span>Education</span>
+                <span>Mobile</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<!-- ShXlabs Projects Window -->
+<div
+  id="shxlabs-projects-window"
+  class="window"
+  style="top: 100px; left: 180px; width: 820px; height: 560px; display: none;"
+>
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <img src="assets/windowsIcons/ie.png" class="title-icon" alt="" />
+      ShXlabs – Projects
+    </div>
+    <div class="title-bar-controls">
+      <button onclick="minimizeWindow('shxlabs-projects-window')">
+        <img src="assets/windowsIcons/Minimize.png" alt="" />
+      </button>
+      <button onclick="maximizeWindow('shxlabs-projects-window')">
+        <img src="assets/windowsIcons/Maximize.png" alt="" />
+      </button>
+      <button onclick="closeWindow('shxlabs-projects-window')" class="close-btn">
+        <img src="assets/windowsIcons/Exit.png" alt="" />
+      </button>
+    </div>
+  </div>
+
+  <div class="window-body projects-window-body">
+    <div class="projects-shell">
+      <section class="projects-content">
+        <header class="projects-header">
+          <div class="projects-search">
+            <input type="text" placeholder="Search ShXlabs projects" />
+            <button>🔍</button>
+          </div>
+        </header>
+
+        <div class="projects-grid">
+          <!-- All four projects under ShXlabs -->
+          <!-- Reuse exactly same cards as above -->
+
+          <!-- AccessibilityAI -->
+          <article
+            class="project-card-xl"
+            data-link="https://github.com/AnujGadekar1/AccessibilityAI-Pro"
+          >
+            <div class="project-thumb">
+              <img
+                src="assets/projects/accessibility-ai.png"
+                alt="AccessibilityAI Project Interface"
+                class="project-thumb-img"
+              />
+              <span class="thumb-label">AccessibilityAI</span>
+            </div>
+            <div class="project-meta">
+              <h3>AccessibilityAI</h3>
+              <p>WCAG accessibility analyzer with automated reports.</p>
+              <div class="project-tags">
+                <span>Client Work</span>
+                <span>ShXlabs</span>
+                <span>Web</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Shoplifting -->
+          <article
+            class="project-card-xl"
+            data-link="https://github.com/AnujGadekar1/Shoplifting-Detection"
+          >
+            <div class="project-thumb">
+              <img
+                src="assets/projects/shoplifting.png"
+                alt="Shoplifting Detection System"
+                class="project-thumb-img"
+              />
+              <span class="thumb-label">Shoplifting Detection</span>
+            </div>
+            <div class="project-meta">
+              <h3>Shoplifting Detection</h3>
+              <p>Real-time model for shoplifting / anomaly detection.</p>
+              <div class="project-tags">
+                <span>Research Work</span>
+                <span>Client Work</span>
+                <span>ShXlabs</span>
+                <span>AI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FinTrack -->
+          <article
+            class="project-card-xl"
+            data-link="https://github.com/AnujGadekar1/FinTrack"
+          >
+            <div class="project-thumb">
+              <img
+                src="assets/projects/fintrack.png"
+                alt="FinTrack App Screens"
+                class="project-thumb-img"
+              />
+              <span class="thumb-label">FinTrack</span>
+            </div>
+            <div class="project-meta">
+              <h3>FinTrack</h3>
+              <p>AI-assisted personal finance tracking and insights.</p>
+              <div class="project-tags">
+                <span>Personal Work</span>
+                <span>ShXlabs</span>
+                <span>Web App</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- AgriGuard -->
+          <article
+            class="project-card-xl"
+            data-link="https://github.com/AnujGadekar1/AgriGuard-Smart-App"
+          >
+            <div class="project-thumb">
+              <img
+                src="assets/projects/agriguard.png"
+                alt="AgriGuard Smart App"
+                class="project-thumb-img"
+              />
+              <span class="thumb-label">AgriGuard App</span>
+            </div>
+            <div class="project-meta">
+              <h3>AgriGuard App</h3>
+              <p>A complete centralized chemical management system.</p>
+              <div class="project-tags">
+                <span>Client Work</span>
+                <span>ShXlabs</span>
+                <span>Mobile</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+    <!-- Path: index.html (Contact Me window) -->
+<div
+  id="contact-window"
+  class="window"
+  style="top: 110px; left: 260px; width: 520px; height: 360px;"
+>
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <img src="assets/windowsIcons/Outlook Express.png" class="title-icon" alt="" />
+      Contact Me
+    </div>
+    <div class="title-bar-controls">
+      <button onclick="minimizeWindow('contact-window')">
+        <img src="assets/windowsIcons/Minimize.png" alt="" />
+      </button>
+      <button onclick="maximizeWindow('contact-window')">
+        <img src="assets/windowsIcons/Maximize.png" alt="" />
+      </button>
+      <button onclick="closeWindow('contact-window')" class="close-btn">
+        <img src="assets/windowsIcons/Exit.png" alt="" />
+      </button>
+    </div>
+  </div>
+
+  <div class="window-body contact-body">
+    <!-- Menu bar -->
+    <div class="contact-menubar">
+      <span>File</span>
+      <span>Edit</span>
+      <span>View</span>
+      <span>Tools</span>
+      <span>Help</span>
+    </div>
+
+    <!-- Toolbar -->
+    <div class="contact-toolbar">
+      <button type="button" class="contact-tool-btn">
+        <img src="assets/windowsIcons/mail.png" alt="" />
+        <span>Send Message</span>
+      </button>
+      <button type="button" class="contact-tool-btn">
+        <img src="assets/windowsIcons/Notepad.png" alt="" />
+        <span>New Message</span>
+      </button>
+      <!-- fake icons just for look -->
+      <span class="contact-tool-separator"></span>
+      <span class="contact-tool-icon">✂</span>
+      <span class="contact-tool-icon">📎</span>
+    </div>
+
+    <!-- Fields -->
+    <form class="contact-form" onsubmit="handleContact(event)">
+      <div class="contact-row">
+        <label>To:</label>
+        <input
+          type="text"
+          value="Anuj Gadekar &lt;anuj.work11@gmail.com&gt;"
+          readonly
+        />
+      </div>
+
+      <div class="contact-row">
+        <label>From:</label>
+        <input
+          id="contact-from"
+          type="email"
+          placeholder="Your email address"
+          required
+        />
+      </div>
+
+      <div class="contact-row">
+        <label>Subject:</label>
+        <input
+          id="contact-subject"
+          type="text"
+          placeholder="Subject of your message"
+          required
+        />
+      </div>
+
+      <div class="contact-row contact-row-message">
+        <label>Message:</label>
+        <textarea
+          id="contact-message"
+          placeholder="Write your message here"
+          required
+        ></textarea>
+      </div>
+
+      <!-- hidden real submit so Enter in text fields works -->
+      <button type="submit" style="display:none;"></button>
+    </form>
+
+    <!-- Status bar -->
+    <div class="contact-statusbar">
+      Compose a message to Anuj
+    </div>
+  </div>
+</div>
+
+    <!-- MY COMPUTER WINDOW -->
+    <div id="mycomputer-window" class="window" style="top: 80px; left: 90px; width: 520px;">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          <img src="assets/windowsIcons/My Computer.png" class="title-icon" alt="" />
+          My Computer
+        </div>
+        <div class="title-bar-controls">
+          <button onclick="minimizeWindow('mycomputer-window')">
+            <img src="assets/windowsIcons/Minimize.png" alt="" />
+          </button>
+          <button onclick="maximizeWindow('mycomputer-window')">
+            <img src="assets/windowsIcons/Maximize.png" alt="" />
+          </button>
+          <button onclick="closeWindow('mycomputer-window')" class="close-btn">
+            <img src="assets/windowsIcons/Exit.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="window-body explorer-layout">
+        <div class="explorer-sidebar">
+          <div class="explorer-group">
+            <div class="group-title">
+              <img src="assets/windowsIcons/folder.png" alt="" />
+              System Tasks
+            </div>
+            <ul>
+              <li onclick="alert('Open Control Panel from Start Menu')">
+                View system information
+              </li>
+              <li onclick="alert('No network drives configured')">Map network drive</li>
+            </ul>
+          </div>
+        </div>
+        <div class="explorer-main">
+          <div class="project-card">
+            <div class="card-icon">
+              <img src="assets/windowsIcons/My Documents.png" alt="" />
+            </div>
+            <div class="card-details">
+              <h4>My Documents</h4>
+              <p>Your projects, notes, and resources.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-icon">
+              <img src="assets/windowsIcons/hdd.png" alt="" />
+            </div>
+            <div class="card-details">
+              <h4>Local Disk (C:)</h4>
+              <p>XP Portfolio Filesystem</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-icon">
+              <img src="assets/windowsIcons/Network Connections.png" alt="" />
+            </div>
+            <div class="card-details">
+              <h4>Network</h4>
+              <p>Virtual connections only.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NOTEPAD WINDOW -->
+    <div id="notepad-window" class="window" style="top: 70px; left: 310px; width: 420px;">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          <img src="assets/windowsIcons/Notepad.png" class="title-icon" alt="" />
+          Notepad - personal_notes.txt
+        </div>
+        <div class="title-bar-controls">
+          <button onclick="minimizeWindow('notepad-window')">
+            <img src="assets/windowsIcons/Minimize.png" alt="" />
+          </button>
+          <button onclick="maximizeWindow('notepad-window')">
+            <img src="assets/windowsIcons/Maximize.png" alt="" />
+          </button>
+          <button onclick="closeWindow('notepad-window')" class="close-btn">
+            <img src="assets/windowsIcons/Exit.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="window-body">
+        <div class="window-toolbar">
+          <span>File</span><span>Edit</span><span>Format</span><span>View</span><span>Help</span>
+        </div>
+        <textarea
+          id="notepad-textarea"
+          class="notepad-editor"
+          placeholder="// Jot down ideas or todos here. (Stored locally in this session)"
+        ></textarea>
+      </div>
+    </div>
+
+    <!-- MEDIA PLAYER WINDOW -->
+    <div id="mediaplayer-window" class="window" style="top: 120px; left: 140px; width: 420px;">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          <img src="assets/windowsIcons/Windows Media Player.png" class="title-icon" alt="" />
+          Windows Media Player
+        </div>
+        <div class="title-bar-controls">
+          <button onclick="minimizeWindow('mediaplayer-window')">
+            <img src="assets/windowsIcons/Minimize.png" alt="" />
+          </button>
+          <button onclick="maximizeWindow('mediaplayer-window')">
+            <img src="assets/windowsIcons/Maximize.png" alt="" />
+          </button>
+          <button onclick="closeWindow('mediaplayer-window')" class="close-btn">
+            <img src="assets/windowsIcons/Exit.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="window-body media-body">
+        <div class="media-screen">
+          <div class="visualizer-placeholder">
+            <span>XP Visualizer</span>
+          </div>
+        </div>
+        <div class="media-controls">
+          <button type="button">⏮</button>
+          <button type="button">▶</button>
+          <button type="button">⏭</button>
+          <div class="media-progress">
+            <div class="media-progress-bar"></div>
+          </div>
+        </div>
+        <div class="media-playlist">
+          <ul>
+            <li>Startup Theme (mock)</li>
+            <li>Click &amp; Pop (mock)</li>
+            <li>Notification Bell (mock)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CMD WINDOW -->
+    <div id="cmd-window" class="window" style="top: 130px; left: 330px; width: 450px;">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          <img src="assets/windowsIcons/Run.png" class="title-icon" alt="" />
+          Command Prompt
+        </div>
+        <div class="title-bar-controls">
+          <button onclick="minimizeWindow('cmd-window')">
+            <img src="assets/windowsIcons/Minimize.png" alt="" />
+          </button>
+          <button onclick="maximizeWindow('cmd-window')">
+            <img src="assets/windowsIcons/Maximize.png" alt="" />
+          </button>
+          <button onclick="closeWindow('cmd-window')" class="close-btn">
+            <img src="assets/windowsIcons/Exit.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="window-body cmd-body">
+        <div id="cmd-output" class="cmd-output">
+          Microsoft Windows XP [Version 5.1.2600]<br />
+          (C) Copyright Anuj XP Portfolio. All rights reserved.<br /><br />
+          C:\Documents and Settings\Anuj&gt; type help<br />
+          commands: about, projects, clear, whoami<br /><br />
+        </div>
+        <div class="cmd-input-row">
+          <span>C:\&gt;</span>
+          <input
+            id="cmd-input"
+            type="text"
+            autocomplete="off"
+            onkeydown="handleCmdKey(event)"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTOS WINDOW -->
+    <div id="photos-window" class="window" style="top: 140px; left: 80px; width: 430px;">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          <img src="assets/windowsIcons/My Pictures.png" class="title-icon" alt="" />
+          My Pictures
+        </div>
+        <div class="title-bar-controls">
+          <button onclick="minimizeWindow('photos-window')">
+            <img src="assets/windowsIcons/Minimize.png" alt="" />
+          </button>
+          <button onclick="maximizeWindow('photos-window')">
+            <img src="assets/windowsIcons/Maximize.png" alt="" />
+          </button>
+          <button onclick="closeWindow('photos-window')" class="close-btn">
+            <img src="assets/windowsIcons/Exit.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="window-body photos-body">
+        <div class="photo-preview">
+          <img src="assets/WindowsXPbg.png" alt="XP Bliss" />
+        </div>
+        <div class="photo-strip">
+          <div class="photo-thumb" onclick="setPhoto('assets/WindowsXPbg.png')">
+            <img src="assets/WindowsXPbg.png" alt="" />
+          </div>
+          <!-- You can add more thumbnails here using same function -->
+        </div>
+      </div>
+    </div>
+
+    <!-- START MENU -->
+    <div id="start-menu" class="start-menu">
+      <div class="start-header">
+        <img src="assets/windowsIcons/user.png" class="start-avatar" alt="User" />
+        <span class="profile-name">Anuj</span>
+      </div>
+      <div class="start-body">
+        <div class="start-col-left">
+          <div class="start-item" onclick="openWindow('projects-window'); toggleStartMenu();">
+            <img src="assets/windowsIcons/ie.png" alt="" />
+            <div class="start-text">
+              <span class="main-text">Internet</span>
+              <span class="sub-text">View projects online</span>
+            </div>
+          </div>
+          <div class="start-item" onclick="openWindow('contact-window'); toggleStartMenu();">
+            <img src="assets/windowsIcons/Outlook Express.png" alt="" />
+            <div class="start-text">
+              <span class="main-text">E-mail</span>
+              <span class="sub-text">Outlook Express</span>
+            </div>
+          </div>
+
+          <div class="start-separator"></div>
+
+          <div class="start-item-small" onclick="openWindow('about-window'); toggleStartMenu();">
+            <img src="assets/windowsIcons/user.png" alt="" />
+            <span>About Me</span>
+          </div>
+          <div class="start-item-small" onclick="openWindow('resume-window'); toggleStartMenu();">
+            <img src="assets/windowsIcons/Notepad.png" alt="" />
+            <span>My Resume</span>
+          </div>
+          <div class="start-item-small" onclick="openWindow('projects-window'); toggleStartMenu();">
+            <img src="assets/windowsIcons/My Documents.png" alt="" />
+            <span>My Projects</span>
+          </div>
+          <div class="start-item-small" onclick="openWindow('notepad-window'); toggleStartMenu();">
+            <img src="assets/windowsIcons/Notepad.png" alt="" />
+            <span>Notepad</span>
+          </div>
+
+          <div class="start-separator"></div>
+
+          <div class="start-item-small" onclick="alert('Program list coming soon')">
+            <span style="display:flex;justify-content:center;width:24px;font-weight:bold;">
+              All Programs
+            </span>
+            <img
+              src="assets/windowsIcons/arrow-right.png"
+              style="width: 10px; height: 10px; margin-left: auto"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="start-col-right">
+          <div
+            class="start-item-right bold-item"
+            onclick="openWindow('mycomputer-window'); toggleStartMenu();"
+          >
+            <img src="assets/windowsIcons/My Computer.png" alt="" />
+            <span>My Computer</span>
+          </div>
+          <div
+            class="start-item-right bold-item"
+            onclick="openWindow('photos-window'); toggleStartMenu();"
+          >
+            <img src="assets/windowsIcons/My Pictures.png" alt="" />
+            <span>My Pictures</span>
+          </div>
+          <div
+            class="start-item-right bold-item"
+            onclick="openWindow('mediaplayer-window'); toggleStartMenu();"
+          >
+            <img src="assets/windowsIcons/My Music.png" alt="" />
+            <span>My Media</span>
+          </div>
+
+          <div class="start-separator-blue"></div>
+
+          <div class="start-item-right" onclick="alert('Control Panel mock only')">
+            <img src="assets/windowsIcons/Control Panel.png" alt="" />
+            <span>Control Panel</span>
+          </div>
+          <div class="start-item-right" onclick="alert('No printers configured')">
+            <img src="assets/windowsIcons/Printers and Faxes.png" alt="" />
+            <span>Printers and Faxes</span>
+          </div>
+
+          <div class="start-separator-blue"></div>
+
+          <div class="start-item-right" onclick="alert('Help coming soon')">
+            <img src="assets/windowsIcons/Help and Support.png" alt="" />
+            <span>Help and Support</span>
+          </div>
+          <div class="start-item-right" onclick="openWindow('cmd-window'); toggleStartMenu();">
+            <img src="assets/windowsIcons/Run.png" alt="" />
+            <span>Run...</span>
+          </div>
+        </div>
+      </div>
+      <div class="start-footer">
+        <button type="button" class="logoff-btn" onclick="alert('Logging off Anuj...')">
+          <img src="assets/windowsIcons/Logout.png" alt="" />
+          Log Off
+        </button>
+        <button type="button" class="logoff-btn" onclick="triggerShutdown()">
+          <img src="assets/windowsIcons/Power.png" alt="" />
+          Turn Off Computer
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TASKBAR -->
+  <div class="taskbar">
+    <button class="start-btn" type="button" onclick="toggleStartMenu()">
+      <img src="assets/windowsIcons/windows.png" alt="logo" />
+      <span>start</span>
+    </button>
+    <div class="task-bar-items" id="taskbar-items"></div>
+    <div class="system-tray">
+      <div class="tray-icons">
+        <img src="assets/windowsIcons/sndvol32.exe_14_303-0.png" alt="Volume" />
+        <img src="assets/windowsIcons/Network Connections.png" alt="Network" />
+      </div>
+      <div id="clock" class="clock">12:00 PM</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
